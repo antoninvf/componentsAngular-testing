@@ -1,0 +1,6 @@
+<div>
+  <button type="button" (click)="toggleBool =! toggleBool" class="btn btn-danger">{{buttonText}}</button>
+</div>
+<ng-container *ngIf="toggleBool">
+  <ng-content></ng-content>
+</ng-container>

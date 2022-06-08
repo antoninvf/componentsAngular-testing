@@ -1,0 +1,12 @@
+<div>
+  <button type="button" (click)="toggleBool =! toggleBool" class="btn btn-danger">
+    <ng-content></ng-content>
+  </button>
+</div>
+<ng-container *ngIf="toggleBool">
+  <div class="position-absolute">
+    <div class="bg-white px-2 py-1" *ngFor="let i of items">
+      {{i}}
+    </div>
+  </div>
+</ng-container>
